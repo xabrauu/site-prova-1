@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="stylesheet" href="carrinho.css">
+    <title>Carrinho de Compras</title>
+    <style>
+        
+      
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Carrinho de Compras</h1>
+        <p>Aqui você vera os itens adicionados ao seu carrinho</p>
+        <button class="botao-voltar" onclick="voltar()">Voltar</button>
+        <script>
+            function voltar() {
+                window.history.back();
+            }
+        </script>
+    </header>
+
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Estilos opcionais para o carrinho */
+    #carrinho {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-top: 10px;
+    }
+  </style>
+  <title>Carrinho</title>
+</head>
+<body>
+
+  <div id="carrinho">
+    <h2>Carrinho</h2>
+    <ul id="listaCarrinho"></ul>
+    <p>Total: <span id="totalCarrinho">0.00</span></p>
+    <button onclick="limparCarrinho()">Limpar Carrinho</button>
+  </div>
+
+  <script>
+    // Lógica do Carrinho
+    function atualizarCarrinhoNaPagina() {
+      const listaCarrinho = document.getElementById('listaCarrinho');
+      const totalCarrinho = document.getElementById('totalCarrinho');
+
+      let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+      let total = 0;
+
+      // Limpa a lista do carrinho
+      listaCarrinho.innerHTML = '';
+var remover = document.createElement('div');
+        remover.innerHTML = '&#10006;'; // Ícone "X"
+        remover.classList.add('remover-item');
+        remover.onclick = function () {
+            carrinho.removeChild(itemCarrinho);
+        }
+      // Adiciona cada item do carrinho à lista
+      carrinho.forEach(item => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${item.nome} - R$${item.preco.toFixed(2)}`;
+        listaCarrinho.appendChild(listItem);
+        total += item.preco;
+      });
+
+      // Atualiza o total na página
+      totalCarrinho.textContent = total.toFixed(2);
+    }
+
+    // Chamada inicial para exibir produtos existentes no carrinho
+    atualizarCarrinhoNaPagina();
+    
+        
+  </script>
+  <script> 
+  
+  function atualizarCarrinhoNaPagina() {
+      const listaCarrinho = document.getElementById('listaCarrinho');
+      const totalCarrinho = document.getElementById('totalCarrinho');
+
+      let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+      let total = 0;
+
+      // Limpa a lista do carrinho
+      listaCarrinho.innerHTML = '';
+
+      // Adiciona cada item do carrinho à lista
+      carrinho.forEach(item => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${item.nome} - R$${item.preco.toFixed(2)}`;
+        listaCarrinho.appendChild(listItem);
+        total += item.preco;
+      });
+
+      // Atualiza o total na página
+      totalCarrinho.textContent = total.toFixed(2);
+    }
+
+    // Função para limpar o carrinho
+    function limparCarrinho() {
+      localStorage.removeItem('carrinho');
+      // Atualiza a página para refletir a remoção dos itens do carrinho
+      atualizarCarrinhoNaPagina();
+    }
+
+    // Chamada inicial para exibir produtos existentes no carrinho
+    atualizarCarrinhoNaPagina();
+</script>
+<script>
+// Lógica do Carrinho
+    function atualizarCarrinhoNaPagina() {
+      const listaCarrinho = document.getElementById('listaCarrinho');
+      const totalCarrinho = document.getElementById('totalCarrinho');
+
+      let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+      let total = 0;
+
+      // Limpa a lista do carrinho
+      listaCarrinho.innerHTML = '';
+
+      // Adiciona cada item do carrinho à lista
+      carrinho.forEach(item => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${item.nome} - R$${item.preco.toFixed(2)}`;
+        listaCarrinho.appendChild(listItem);
+        total += item.preco;
+      });
+
+      // Atualiza o total na página
+      totalCarrinho.textContent = total.toFixed(2);
+    }
+
+    // Função para limpar o carrinho
+    function limparCarrinho() {
+      localStorage.removeItem('carrinho');
+      // Atualiza a página para refletir a remoção dos itens do carrinho
+      atualizarCarrinhoNaPagina();
+    }
+
+    // Chamada inicial para exibir produtos existentes no carrinho
+    atualizarCarrinhoNaPagina();
+  </script>
+    <main>
+        <div id="carrinho">
+            <h2>Itens no Carrinho</h2>
+            <ul id="itens-carrinho"></ul>
+        </div>
+
+        <a href=""></a>
+    </main>
+    <footer>
+      <p>&copy; 2023 INVICTOS sound . Bruno Dos Santos Pinto </p>
+  </footer>
+ </body>
+ </html>
