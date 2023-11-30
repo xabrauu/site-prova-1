@@ -1,0 +1,193 @@
+<head>
+    <title>INVICTOS sond - Contato</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="produtos.css">
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <h1>INVICTOS sond</h1>
+            <nav>
+                <ul>
+                    <li><a href="inicio.html">pagina inicial</a></li>
+                    <li><a href="altofalantes.html">altofalantes</a></li>
+                    <li><a href="modulos amplificadores.html">Modulos amplificadores</a></li>
+                    <li><a href="Fontes automotivas.html">Fontes automotivas</a></li>
+                    <LI><a href="processadores de audio.html">processadores de audio</a></LI>
+                    <LI><a href="radios automotivos.html">radios</a></LI>
+                    <LI><a href="carinho.html">carrinho</a></LI>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <ul class="produtos">
+            <li>
+                <h2></h2>
+                <img src="STETSOM.webp" alt="EX3000 BLACK EDITION">
+                <p>EX3000 BLACK EDITION 1 OHM</p>
+
+                <p>DESCRIÇÃO</p>
+                 
+                <p>ESPECIFICAÇÕES TÉCNICAS</p> 
+                <p>CARACTERÍSTICAS	EX3000 BLACK EDITION 1 OHM</p>
+                <p>Potência RMS em 1 Ohm 12,6V	3000W</p>
+                <p>Potência RMS em 2 Ohms 12,6V	2000W</p>
+                <p>Potência RMS em 1 Ohm 14,4V	3350W</p>
+                <p>Potência RMS em 2 Ohms 14,4V	2100W</p> 
+                <p>Tensão de Alimentação	9V ~ 16V</p>
+                <p>Resposta em Frequência	10Hz ~ 20KHz</p> 
+                <p>Crossover Low Pass	90Hz ~ 20KHz</p>
+                <p>Crossover High Pass	10Hz ~ 700Hz</p>
+                <p>Relação Sinal Ruído	>90dB</p>
+                <p>Impedância de Entrada	7K Ohms</p> 
+                <p>Consumo com Sinal Musical	150A</p> 
+                <p>Consumo com Sinal Bass	300A</p>
+                <p>Dimensões (A x L x C) mm	78 x 231.5 x 191.5 mm</p> 
+                <p>Peso Kg	2.3 Kg</p>
+                <p class="preco">R$800,00</p>
+                <button onclick="adicionarAoCarrinho('EX3000 BLACK EDITION', 800.00)">Adicionar ao Carrinho</button>
+                </div>
+                <div id="carrinho">
+                    <h2>Carrinho</h2>
+                    <ul id="listaCarrinho"></ul>
+                    <p>Total: <span id="totalCarrinho">0.00</span></p>
+                  </div>
+
+                <script>
+
+        
+        function adicionarAoCarrinho(nome, preco) {
+          let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+          carrinho.push({ nome, preco });
+          localStorage.setItem('carrinho', JSON.stringify(carrinho));
+        }
+        var remover = document.createElement('div');
+    remover.innerHTML = '&#10006;'; // Ícone "X"
+    remover.classList.add('remover-item');
+    remover.onclick = function () {
+        carrinho.removeChild(itemCarrinho);
+    }  
+    function adicionarEIrParaCarrinho(nome, preco) {
+                carrinho.adicionarItem(nome, preco);
+                
+    }
+    </script>
+                </div>
+            </li>
+            <li>
+                <h2></h2>
+                <img src="D_NQ_NP_672288-MLB46963534785_082021-O.webp" alt="VULCAN 8000">
+                <p>VULCAN 8000 – 1 OHM</p>
+                    <p>DESCRIÇÃO</p>
+
+
+                    <p>A linha VULCAN foi desenvolvida para amantes do som automotivo que buscam máximo desempenho em amplificadores FULL-RANGE.
+                    </p>
+                    <p>Sua resposta de frequência de 10Hz a 12kHz oferece qualidade e definição de áudio, podendo ser utilizado com subwoofers, woofers, drivers e tweeters.
+                    </p>
+                    <p>ESPECIFICAÇÕES TÉCNICAS</p> 
+                    <p>CARACTERÍSTICAS	VULCAN 8000 – 1 OHM</p>
+                    <p>Número de Canais	1</p>
+                    <p>Potência RMS	8000W</p> 
+                    <p>Potência RMS em 1 Ohm 12,6V	8000W</p> 
+                    <p>Potência RMS em 2 Ohms 12,6V	4400W</p>
+                    <p>Potência RMS em 1 Ohm 14,4V	8600W</p>
+                    <p>Potência RMS em 2 Ohms 14,4V	5100W</p> 
+                    <p>Tensão de Alimentação	9V ~ 16V</p>
+                    <p>Resposta em Frequência	10Hz ~ 12KHz</p> 
+                    <p>Crossover Low Pass	90Hz ~ 12KHz</p> 
+                    <p>Crossover High Pass	10Hz ~ 90Hz</p>
+                    <p>Relação Sinal Ruído	>90dB</p>
+                    <p>Sensibilidade de Entrada	220mV</p>
+                    <p>Impedância de Entrada	14K Ohms</p>
+                    <p>Impedância Mínima de Saída	1 OHM</p>
+                    <p>Consumo com Sinal Musical	370A</p> 
+                    <p>Consumo com Sinal Bass	740A</p> 
+                    <p>Dimensões (A x L x C) mm	78 x 231,5 x 423</p> 
+                    <p>Peso Kg	5,8</p> 
+
+
+
+
+                </p>
+                <p class="preco">R$1950,00</p>
+                <button onclick="adicionarAoCarrinho('VULCAN 8000', 1950.00)">Adicionar ao Carrinho</button>
+                </div>
+                <div id="carrinho">
+                    <h2>Carrinho</h2>
+                    <ul id="listaCarrinho"></ul>
+                    <p>Total: <span id="totalCarrinho">0.00</span></p>
+                  </div>
+
+                <script>
+
+        
+        function adicionarAoCarrinho(nome, preco) {
+          let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+          carrinho.push({ nome, preco });
+          localStorage.setItem('carrinho', JSON.stringify(carrinho));
+        }
+        var remover = document.createElement('div');
+    remover.innerHTML = '&#10006;'; // Ícone "X"
+    remover.classList.add('remover-item');
+    remover.onclick = function () {
+        carrinho.removeChild(itemCarrinho);
+    }  
+    function adicionarEIrParaCarrinho(nome, preco) {
+                carrinho.adicionarItem(nome, preco);
+                
+    }
+    </script>
+                </div>
+            </li>
+            <li>
+                <h2></h2>
+                <img src="stetsom.com.br-force-extreme-force-site-topo.png" alt="FORCE EXTREME ">
+                <p>FORCE EXTREME</p>
+                   <p>ESPECIFICAÇÕES TÉCNICAS</p> 
+                   <p>CARACTERÍSTICAS	FORCE EXTREME</p> 
+                   <p>Número de Canais	1</p>
+                   <p> Potência RMS	180.000W RMS*</p>
+                   <p>Tensão de Alimentação	Verifique a tabela de dimensionamento de baterias</p>
+                   <p>Resposta em Frequência	5Hz à 3KHz</p> 
+                   <p>Impedância de Entrada	28K Ohms</p> 
+                   <p> Consumo com Sinal Musical	300A (0.25 Ohm)</p> 
+                   <p>Consumo com Sinal Bass	600A (0.25 Ohm)</p>  
+                   <p>Dimensões (A x L x C) mm	77 x 220 x 570</p> 
+                   <p>Peso Kg	8,0</p>  
+
+                <p class="preco">R$2500,00</p>
+                <button onclick="adicionarAoCarrinho('FORCE EXTREME ', 2500.00)">Adicionar ao Carrinho</button>
+                </div>
+                <div id="carrinho">
+                    <h2>Carrinho</h2>
+                    <ul id="listaCarrinho"></ul>
+                    <p>Total: <span id="totalCarrinho">0.00</span></p>
+                  </div>
+
+                <script>
+
+        
+        function adicionarAoCarrinho(nome, preco) {
+          let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+          carrinho.push({ nome, preco });
+          localStorage.setItem('carrinho', JSON.stringify(carrinho));
+        }
+        var remover = document.createElement('div');
+    remover.innerHTML = '&#10006;'; // Ícone "X"
+    remover.classList.add('remover-item');
+    remover.onclick = function () {
+        carrinho.removeChild(itemCarrinho);
+    }  
+    function adicionarEIrParaCarrinho(nome, preco) {
+                carrinho.adicionarItem(nome, preco);
+                
+    }
+    </script>
+                </div>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>

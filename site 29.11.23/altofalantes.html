@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> INVICTOS sound - Produtos</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="produtos.css">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1>INVICTOS sound </h1>
+                <nav>
+                    <ul>
+                        <li><a href="inicio.html">pagina inicial</a></li>
+                        <li><a href="altofalantes.html">altofalantes</a></li>
+                        <li><a href="modulos amplificadores.html">Modulos amplificadores</a></li>
+                        <li><a href="Fontes automotivas.html">Fontes automotivas</a></li>
+                        <LI><a href="processadores de audio.html">processadores de audio</a></LI>
+                        <LI><a href="radios automotivos.html">radios</a></LI>
+                        <LI><a href="carinho.html">carrinho</a></LI>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <ul class="produtos">
+                <li>
+                    <h2></h2>
+                    <img src="D_NQ_NP_717401-MLB69633732559_052023-O.webp" alt= "Hard Power 550">
+                    <P>HARD POWER 550</P>
+                    <p> Ficha tecnica</p>
+                    <p> Informação	Detalhes</p>
+                        <p></p>Tamanho:	12”</p>
+                        <p> Categoria:	Woofer</p>
+                            <p> Fabricação</p>
+                                <p> Situação:	Em fabricação</p>
+                         
+                        
+                                    <p> Diâmetro Nominal: 12”</p>
+                                        <p>Resposta de Frequência: 45 à 4800hz</p>
+                                            <p>Potência Máxima: 550 Watts RMS</p>
+                                                <p>Potência Musical: 1100 Watts</p>
+                                                    <p>Impedância: 2 ou 4 ohms</p>
+                                                        <p>Sensibilidade (@ 1 W, 1 m) – 94,8 db</p>
+                                                            <p>Resistência (RE): 2,8 ou 5,2 ohms</p>
+                                                                <p>Área de Cone: 522,8 cm²</p>
+                                                                    <p>Frequência de Ressonância: 72</p>
+                                                                        <p>Volume Equivalente (VAS): 27,247</p>
+                                                                            <p>QMS: 13,71</p>
+                                                                                <p>QES: 0,851</p>
+                                                                                    <p>QTS: 0,80</p>
+                                                                                        <p>No Eficiência: 1,15</p>
+                       <p>Compliância (CMS): 0,070</p> 
+                       <p>MMS: 69,61</p> 
+                       <p>XMAX (Máxima excursão do alto falante sem dano): 8</p> 
+                       <p>Diâmetro da Bobina: 3”</p> 
+                       <p>Material da bobina: Corpo em Kapton fio em CCAW</p> 
+                       <p>Carcaça: Alumínio</p>
+                    <p class="preco">R$450,00</p>
+                    <button onclick="adicionarAoCarrinho('altofalantes Hard Power', 450.00)">Adicionar ao Carrinho</button>
+                </div>
+                <div id="carrinho">
+                    <h2>Carrinho</h2>
+                    <ul id="listaCarrinho"></ul>
+                    <p>Total: <span id="totalCarrinho">0.00</span></p>
+                  </div>
+
+                <script>
+
+        
+        function adicionarAoCarrinho(nome, preco) {
+          let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+          carrinho.push({ nome, preco });
+          localStorage.setItem('carrinho', JSON.stringify(carrinho));
+        }
+        var remover = document.createElement('div');
+    remover.innerHTML = '&#10006;'; // Ícone "X"
+    remover.classList.add('remover-item');
+    remover.onclick = function () {
+        carrinho.removeChild(itemCarrinho);
+    }  
+    function adicionarEIrParaCarrinho(nome, preco) {
+                carrinho.adicionarItem(nome, preco);
+                
+    }
+    </script>
+                </div>
+                </li>
+                <li>
+                    <h2></h2>
+                    <img src="D_NQ_NP_708585-MLB42439013678_072020-O.webp" alt="hinor evo 550">
+                    <p>Alto Falante Hinor - 12" EVO 550 4 ohms</p>
+                        <p>A EFICIÊNCIA QUE ESTÁ NO DNA COM POTÊNCIA EM DOBRO.</p>
+                    
+                        <p>Com o 12” EVO 550 os apaixonados pelo grave de ataque vão sentir na pele a força da batida. O 12” EVO 550 foi projetado na medida certa para você.
+</p>
+                        <p>Características:</p>
+                        
+                        <p>Alta potência</p>
+                        <p>- Bobina de 3 polegadas com fio e corpo de bobina importados;</p>
+                        <p>- Pólo e arruela ventilados para maior refrigeração da bobina;</p>
+                        <p>- Cordoalha com liga de prata para maior resistência e condutibilidade elétrica</p> ;
+                        
+                        
+                        <p>Conjunto Magnético Otimizado</p>
+                        <p>- Conjunto magnético otimizado via software FEM (Método de Elementos Finitos), garantindo alta linearidade ao conjunto móvel;</p>
+                        <p>- Ferrite de bário com 169mm de diâmetro externo e 24mm de espessura;</p>
+                        <p>- Arruelas de grande porte com 11 mm de espessura, garantindo refrigeração ao transdutor;
+                        </p>
+                        
+                        <p> Alta linearidade</p>
+                        <p>- Tecido impregnado e compactado para criar uma centragem de alta rigidez;</p>
+                        <p>- Calota com alta compactação de massa de celulose;</p>
+                        <p>- Conjunto magnético otimizado com pólo estendido que garante a uniformidade do campo
+                        magnético;</p> 
+                        <p>-  Suspensão  em  tecido  que  proporciona  melhor  resposta  aos  graves  de  ataque  para
+                        pancadão;</p> 
+                        
+                        
+                        <p>Design arrojado</p>
+                        <p>- Arruelas e pólo com banho em zinco para prevenir oxidação;</p>
+                        <p>- Adesivo em material refletivo;</p> 
+                    </p>
+                    <p class="preco">R$430,00</p>
+                    <button onclick="adicionarAoCarrinho('altofalantes Hinor evo', 430.00)">Adicionar ao Carrinho</button>
+                </div>
+                <div id="carrinho">
+                    <h2>Carrinho</h2>
+                    <ul id="listaCarrinho"></ul>
+                    <p>Total: <span id="totalCarrinho">0.00</span></p>
+                  </div>
+
+                <script>
+
+        
+        function adicionarAoCarrinho(nome, preco) {
+          let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+          carrinho.push({ nome, preco });
+          localStorage.setItem('carrinho', JSON.stringify(carrinho));
+        }
+        var remover = document.createElement('div');
+    remover.innerHTML = '&#10006;'; // Ícone "X"
+    remover.classList.add('remover-item');
+    remover.onclick = function () {
+        carrinho.removeChild(itemCarrinho);
+    }  
+    function adicionarEIrParaCarrinho(nome, preco) {
+                carrinho.adicionarItem(nome, preco);
+                
+    }
+    </script>
+                </div>
+                </li>
+                <li>
+                    <h2></h2>
+                    <img src="c89f2b45dc.webp" alt="Pioneer">
+                    <p>PIONEER</p>
+                    <p>Descrição</p>
+
+                    <p>O mais recente subwoofers da série Champion da Pioneer. O TS-W312S4 foi projetado para levar o nome da Série Champion para o próximo nível com uma série de melhorias.
+                    </p>
+                    <p>Com um design de cone de peso leve / alta rigidez, surround híbrido de camada dupla, conjunto de motor grande e poderoso e estrutura de cesta fechada, os novos subwoofers da série Champion não só têm uma boa aparência, como também têm um desempenho ainda melhor!
+                    </p>
+                    <p>Construção de cone rígido.</p>
+                    <p>A combinação de uma grande tampa central rígida e uma estrutura de cone leve de alta rigidez melhora o desempenho de saída e reduz a perda.
+                    </p>
+                    <p>O contorno híbrido de camada dupla aprimorada (polímero elástico e fibra) fornece um contorno mais leve e durável do que os compostos de borracha tradicionais.
+                    </p>
+                    <p>Conjunto de motor potente.</p>
+                    <p>Combinando um ímã simples (26% maior que nosso modelo anterior e alguns dos mais pesados em sua classe) com um design de bobina de voz mais longo, os subwoofers da série Champion são projetados para alta potência e resistência!
+                    </p>
+                    <p>Especificações:
+                    -Tamanho: 30 cm (12 ").
+                    -Potência máxima : 1600 W.
+                    -RMS: 500 W.
+                    -Resposta de Frequência: 20 Hz a 1,6 kHz.
+                    -Sensibilidade (1W / 1m): 92dB.
+                    -Impedância: Simples 4O.
+                    -Profundidade de Montagem: 157 mm.
+                    -Dimensões de corte: 283 mm.
+                    -Frequência de ressonância: 38 Hz.
+                    -Xmax: 7,7 mm.
+                    -Invólucro recomendado: 35,4 litros.</p> 
+                    
+                    <p>Garantia:</p>
+                    <p>3 Meses contra defeito de fabricação</p>
+                    <p class="preco">R$580,00</p>
+                    <button onclick="adicionarAoCarrinho('altofalantes Pioneer', 580.00)">Adicionar ao Carrinho</button>
+                </div>
+                <div id="carrinho">
+                    <h2>Carrinho</h2>
+                    <ul id="listaCarrinho"></ul>
+                    <p>Total: <span id="totalCarrinho">0.00</span></p>
+                  </div>
+
+                <script>
+
+        
+        function adicionarAoCarrinho(nome, preco) {
+          let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+          carrinho.push({ nome, preco });
+          localStorage.setItem('carrinho', JSON.stringify(carrinho));
+        }
+        var remover = document.createElement('div');
+    remover.innerHTML = '&#10006;'; // Ícone "X"
+    remover.classList.add('remover-item');
+    remover.onclick = function () {
+        carrinho.removeChild(itemCarrinho);
+    }  
+    function adicionarEIrParaCarrinho(nome, preco) {
+                carrinho.adicionarItem(nome, preco);
+                
+    }
+    </script>
+                </div>
+                </li>
+            </ul>
+        </main>
+        <footer>
+            <p>&copy; 2023 INVICTOS sound. Bruno Dos Santos Pinto </p>
+        
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> INVICTOS sound - Produtos</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="produtos.css">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1>INVICTOS sound </h1>
+                <nav>
+                    <ul>
+                        <li><a href="inicio.html">pagina inicial</a></li>
+                        <li><a href="altofalantes.html">altofalantes</a></li>
+                        <li><a href="modulos amplificadores.html">Modulos amplificadores</a></li>
+                        <li><a href="Fontes automotivas.html">Fontes automotivas</a></li>
+                        <LI><a href="processadores de audio.html">processadores de audio</a></LI>
+                        <LI><a href="radios automotivos.html">radios</a></LI>
+                        <LI><a href="carinho.html">carrinho</a></LI>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <ul class="produtos">
+                <li>
+                    <h2></h2>
+                    <img src="D_NQ_NP_759399-MLU71570092405_092023-O.webp" alt="SMART CHARGER 120A/160A">
+                    <p>INFORMAÇÕES TÉCNICAS</P>
+<p>ALIMENTAÇÃO	Bivolt Automatic (127 / 220VAC)</p>
+<p>FAIXA DE TENSÕES EM REDE 127V	100 ~ 140V AC</p>
+<p>FAIXA DE TENSÕES EM REDE 220V	200 ~ 250V AC</p>
+<p>CORRENTE NOMINAL MÁX. DE SAÍDA	120A</p>
+<p>160A* Dinâmico</p>
+<p>POTÊNCIA MÁXIMA DE SAÍDA	2200W</p>
+<p>EFICIÊNCIA	90%</p>
+<p>CONSUMO MÁX. EM REDE 127V	30A</p>
+<p>CONSUMO MÁX. EM REDE 220V	22A</p>
+<p>FLUTUAÇÃO MÁXIMA EM PLENA CARGA	2%</p>
+<p>FUSÍVEL DE ENTRADA (INTERNO)	20A</p>
+<p>TENSÃO DE SAÍDA	12,0V ~ 14,5V</p>
+<p>DIMENSÕES (LXAXP)	182 x 52 x 330mm</p>
+<p>PESO	2,41Kg</p>
+<p>EAN	7898556849814</p>
+<p>INFORMAÇÕES ADICIONAIS</p>
+<p>Potência Máx. de entrada:</p>
+<p>3200VA(***) ou 2200W (FP: ~0,58 capacitivo)</p>
+
+<p>Consumo em Stand by (desligada, porém conectada
+a tomada: 3W)</p>
+
+                    <p class="preco">R$712,00</p>
+                    <button onclick="adicionarAoCarrinho('SMART CHARGER 120A/160A', 712.00)">Adicionar ao Carrinho</button>
+                </div>
+                <div id="carrinho">
+                    <h2>Carrinho</h2>
+                    <ul id="listaCarrinho"></ul>
+                    <p>Total: <span id="totalCarrinho">0.00</span></p>
+                  </div>
+
+                <script>
+
+        
+        function adicionarAoCarrinho(nome, preco) {
+          let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+          carrinho.push({ nome, preco });
+          localStorage.setItem('carrinho', JSON.stringify(carrinho));
+        }
+        var remover = document.createElement('div');
+    remover.innerHTML = '&#10006;'; // Ícone "X"
+    remover.classList.add('remover-item');
+    remover.onclick = function () {
+        carrinho.removeChild(itemCarrinho);
+    }  
+    function adicionarEIrParaCarrinho(nome, preco) {
+                carrinho.adicionarItem(nome, preco);
+                
+    }
+    </script>
+                </div>
+                </li>
+                <li>
+                    <h2></h2>
+                    <img src="D_NQ_NP_983306-MLB54099230113_032023-O.webp" alt="SMART CHARGER 70A/90A">
+                    <P>INFORMAÇÕES TÉCNICAS</P>
+<p>ALIMENTAÇÃO	Bivolt Automático (127 / 220VAC)</p>
+<p>FAIXA DE TENSÕES EM REDE 127V	90 ~ 140V AC</p>
+<p>FAIXA DE TENSÕES EM REDE 220V	190 ~ 250V AC</p>
+<p>CORRENTE NOMINAL MÁX. DE SAÍDA	70A</p>
+<p>90A* Dinâmico por até 2 minutos constante</p>
+<p>POTÊNCIA MÁXIMA DE SAÍDA	1300W</p>
+<p>EFICIÊNCIA	90%</p>
+<p>CONSUMO MÁX. EM REDE 127V	18A</p>
+<p>CONSUMO MÁX. EM REDE 220V	10A</p>
+<p>FLUTUAÇÃO MÁXIMA EM PLENA CARGA	(90A @14.2V): 2%</p>
+<p>FUSÍVEL DE ENTRADA (INTERNO)	15A</p>
+<p>TENSÃO DE SAÍDA	12,0V ~ 14,5V (**)</p>
+<p>DIMENSÕES (LXAXP)	182 x 52 x 256mm</p>
+<p>PESO	1,86Kg</p>
+<p>EAN	7898556849029</p>
+<p>INFORMAÇÕES ADICIONAIS</p>
+<p>Potência Máxima de Entrada: 2000VA(***) ou
+1450W (FP: ~0,60 capacitivo)</p>
+
+<p>Consumo em Stand by (desligada, porém conectada
+a tomada: 3W)</p>
+
+<p class="preco">R$489,00</p>
+<button onclick="adicionarAoCarrinho('SMART CHARGER 70A/90A', 489.00)">Adicionar ao Carrinho</button>
+                </div>
+                <div id="carrinho">
+                    <h2>Carrinho</h2>
+                    <ul id="listaCarrinho"></ul>
+                    <p>Total: <span id="totalCarrinho">0.00</span></p>
+                  </div>
+
+                <script>
+
+        
+        function adicionarAoCarrinho(nome, preco) {
+          let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+          carrinho.push({ nome, preco });
+          localStorage.setItem('carrinho', JSON.stringify(carrinho));
+        }
+        var remover = document.createElement('div');
+    remover.innerHTML = '&#10006;'; // Ícone "X"
+    remover.classList.add('remover-item');
+    remover.onclick = function () {
+        carrinho.removeChild(itemCarrinho);
+    }  
+    function adicionarEIrParaCarrinho(nome, preco) {
+                carrinho.adicionarItem(nome, preco);
+                
+    }
+    </script>
+                </div>
+</li>
+<li>
+<h2></h2>
+<img src="Smart-Charger-100A-1.jpg" alt="SMART CHARGER 100A/130A">
+<p>INFORMAÇÕES TÉCNICAS</p>
+<p>ALIMENTAÇÃO	Bivolt Automático (127 / 220VAC)</p>
+<p>FAIXA DE TENSÕES EM REDE 127V	90 ~ 140V AC</p>
+<p>FAIXA DE TENSÕES EM REDE 220V	190 ~ 250V AC</p>
+<p>CORRENTE NOMINAL MÁX. DE SAÍDA	100A 130A* Dinâmico</p>
+<p>POTÊNCIA MÁXIMA DE SAÍDA	1850W</p>
+<p>EFICIÊNCIA	90%</p>
+<p>CONSUMO MÁX. EM REDE 127V	22A</p>
+<p>CONSUMO MÁX. EM REDE 220V	14A</p>
+<p>FLUTUAÇÃO MÁXIMA EM PLENA CARGA	(130A @14.2V): 2%</p>
+<p>FUSÍVEL DE ENTRADA (INTERNO)	20A</p>
+<p>TENSÃO DE SAÍDA	12,0V ~ 14,5V (**)</p>
+<p>DIMENSÕES (LXAXP)	182 x 52 x 319mm</p>
+<p>PESO	2,30Kg</p>
+<p>EAN	7898556849227</p>
+<p>INFORMAÇÕES ADICIONAIS</p>
+<p>Potência Máxima de Entrada: 3000VA(***) ou 2000W (FP: ~0,58 capacitivo)</p>
+
+<p>Consumo em Stand by (desligada, porém conectada
+a tomada: 3W)</p>
+
+                    <p class="preco">R$610,00</p>
+                    <button onclick="adicionarAoCarrinho('SMART CHARGER 100A/130A', 610.00)">Adicionar ao Carrinho</button>
+                </div>
+                <div id="carrinho">
+                    <h2>Carrinho</h2>
+                    <ul id="listaCarrinho"></ul>
+                    <p>Total: <span id="totalCarrinho">0.00</span></p>
+                  </div>
+
+                <script>
+
+        
+        function adicionarAoCarrinho(nome, preco) {
+          let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+          carrinho.push({ nome, preco });
+          localStorage.setItem('carrinho', JSON.stringify(carrinho));
+        }
+        var remover = document.createElement('div');
+    remover.innerHTML = '&#10006;'; // Ícone "X"
+    remover.classList.add('remover-item');
+    remover.onclick = function () {
+        carrinho.removeChild(itemCarrinho);
+    }  
+    function adicionarEIrParaCarrinho(nome, preco) {
+                carrinho.adicionarItem(nome, preco);
+                
+    }
+    </script>
+                </div>
+                </li>
+            </ul>
+        </main>
+    </body>
+</html>
